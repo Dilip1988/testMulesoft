@@ -10,6 +10,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="ac-section-18-devopsFlow" doc:id="a2b75ec5-9e2a-46c2-89be-fe9fa55c23cf" >
 		<http:listener doc:name="Listener" doc:id="91838e4f-45e8-4930-b91b-af4a645b18c1" config-ref="HTTP_Listener_config" path="cicd-demo"/>
 		<set-payload value="My First CICD demo" doc:name="Set Payload" doc:id="4eef9f94-dae9-44f8-9666-94f159206c26" />
+		<logger level="INFO" doc:name="Logger" doc:id="7dc25c66-abc7-4da6-b703-89c524fd084e" message="This is logger1 added "/>
 		<logger level="INFO" doc:name="Logger" doc:id="63a8b128-c99e-4cf9-b415-69b5550beaf7" message="at end of flow #[payload]"/>
 	</flow>
 </mule>
